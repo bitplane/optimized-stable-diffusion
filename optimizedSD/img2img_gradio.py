@@ -1,3 +1,5 @@
+#!/usr/bin/env gradio
+
 import gradio as gr
 import numpy as np
 import torch
@@ -21,7 +23,7 @@ from contextlib import nullcontext
 from ldm.util import instantiate_from_config
 from transformers import logging
 import pandas as pd
-from optimUtils import split_weighted_subprompts, logger
+from .optimUtils import split_weighted_subprompts, logger
 logging.set_verbosity_error()
 import mimetypes
 mimetypes.init()

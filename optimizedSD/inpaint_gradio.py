@@ -1,3 +1,5 @@
+#!/usr/bin/env gradio
+
 import argparse
 import os
 import re
@@ -19,7 +21,7 @@ from tqdm import tqdm, trange
 from transformers import logging
 
 from ldm.util import instantiate_from_config
-from optimUtils import split_weighted_subprompts, logger
+from .optimUtils import split_weighted_subprompts, logger
 
 logging.set_verbosity_error()
 import mimetypes
